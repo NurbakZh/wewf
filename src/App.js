@@ -116,7 +116,7 @@ function App() {
                 <li><Link activeClass="active" smooth spy to="results">Результаты</Link></li>
                 <li><Link activeClass="active" smooth spy to="faq">FAQs</Link></li>
             </ul>
-            <button className="join">Принять участие</button>
+            <button className="join"><Link activeClass="active" smooth spy to="tariff">Принять участие</Link></button>
             <button className="s1"></button>
         </nav>
         <nav className="small" >
@@ -136,7 +136,7 @@ function App() {
                     <p>Начни зарабатывать на Р2Р торговле за две недели
                         по уникальной методике от мотиватора и
                         CryptOn Club от 2к рублей в день</p>
-                    <button>Принять участие</button>
+                    <button><Link activeClass="active" smooth spy to="tariff">Принять участие</Link></button>
                 </div>
             </div>
             <div className="right">
@@ -181,7 +181,7 @@ function App() {
             </h1>
             <div className="buttons">
                 <button className="programButton"><Link activeClass="active" smooth spy to="program">Программа обучения</Link></button>
-                <button className="bannerJoinButton">Принять Участие</button>
+                <button className="bannerJoinButton"><Link activeClass="active" smooth spy to="tariff">Принять Участие</Link></button>
             </div>
             <div className="bannerBitcoin1"></div>
             <div className="bannerBitcoin2"></div>
