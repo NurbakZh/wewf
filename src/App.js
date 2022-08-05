@@ -80,12 +80,12 @@ function App() {
             buttons[i].onclick = function () {
                 if (buttonPress[i] === false) {
                     modules[i].style.display = "flex";
-                    buttons[i].style.background = "url(http://localhost:3000/static/media/arrowup.8359c40347a0bf233fa0.svg) no-repeat";
+                    buttons[i].style.transform = "scaleY(-1)";
                     buttons[i].style.backgroundSize = "contain";
                     buttonPress[i] = true;
                 } else {
                     modules[i].style.display = "none";
-                    buttons[i].style.background = "url(http://localhost:3000/static/media/arrowdown.270a7a5a78fd8c227c6f.svg) no-repeat";
+                    buttons[i].style.transform = "scaleY(1)";
                     buttons[i].style.backgroundSize = "contain";
                     buttonPress[i] = false;
                 }
@@ -95,17 +95,12 @@ function App() {
         const small = document.getElementsByClassName("small");
         s1[0].onclick = function () {
             if(open === false) {
-                s1[0].style.background = "url(http://localhost:3000/static/media/cross.55539c29f8c0b94c0955.svg) no-repeat";
-                s1[0].style.height = "24px";
-                s1[0].style.width = "24px";
+                s1[0].style.opacity = "0.6";
                 small[0].style.display = "block";
                 open = true;
             } else {
-                s1[0].style.background = "url(http://localhost:3000/static/media/burger.d39fb40923d60ea045f0.svg) no-repeat";
                 small[0].style.display = "none";
-                s1[0].style.height = "24px";
-                s1[0].style.width = "24px";
-                s1[0].style.backgroundSize = "contain";
+                s1[0].style.opacity = "1";
                 open = false;
             }
         }
@@ -593,7 +588,16 @@ function App() {
                             <p className="lineinfo">Продвинутый Р2Р. Что должен знать и уметь профессиональный Р2P-шник</p>
                         </div>
                     </div>
-                    <button className="tariffButton">Выбрать</button>
+                    <button className="tariffButton" onClick={
+                        function buy() {
+                            window.open("https://learn-cryptonclub.ru/pl/lite/widget/widget?&id=714520");
+                        }
+                    }>Выбрать</button>
+                    <button className="tariffButton t2" onClick={
+                        function rassrochka() {
+                            window.open("https://form.crm.rrllc.ru/Billion_club/");
+                        }
+                    }>Рассрочка</button>
                 </div>
                 <div className="One">
                     <div className="header">
@@ -636,7 +640,16 @@ function App() {
                             <p className="lineinfo">Продвинутый Р2Р. Что должен знать и уметь профессиональный Р2P-шник</p>
                         </div>
                     </div>
-                    <button className="tariffButton">Выбрать</button>
+                    <button className="tariffButton" onClick={
+                        function buy() {
+                            window.open("https://learn-cryptonclub.ru/pl/lite/widget/widget?&id=714523");
+                        }
+                    }>Выбрать</button>
+                    <button className="tariffButton t2" onClick={
+                        function rassrochka() {
+                            window.open("https://form.crm.rrllc.ru/Billion_club/");
+                        }
+                    }>Рассрочка</button>
                 </div>
                 <div className="One">
                     <div className="header">
@@ -678,7 +691,16 @@ function App() {
                             <p className="lineinfo">Продвинутый Р2Р. Что должен знать и уметь профессиональный Р2P-шник</p>
                         </div>
                     </div>
-                    <button className="tariffButton">Выбрать</button>
+                    <button className="tariffButton" onClick={
+                        function buy() {
+                            window.open("https://learn-cryptonclub.ru/pl/lite/widget/widget?&id=714531");
+                        }
+                    }>Выбрать</button>
+                    <button className="tariffButton t2" onClick={
+                        function rassrochka() {
+                            window.open("https://form.crm.rrllc.ru/Billion_club/");
+                        }
+                    }>Рассрочка</button>
                 </div>
             </div>
         </section>
@@ -969,6 +991,9 @@ function App() {
                 <a href="https://docs.google.com/document/d/1UqBxelZ0BMV8QoD2kOeD-1oeWORdKngIWe-sJ03tYwM/edit" className="politika">Публичная оферта</a>
             </div>
         </footer>
+        <script id="be7ccb04abb22b2d16fc36cbaeefaab139c5a92c" src="https://learn-cryptonclub.ru/pl/lite/widget/script?id=714520"></script>
+        <script id="69e430df9bd5ded38040041eb07a60cb8d1c3b37" src="https://learn-cryptonclub.ru/pl/lite/widget/script?id=714523"></script>
+        <script id="e6f4be307578943bde0d17fa428a59027c0dbf46" src="https://learn-cryptonclub.ru/pl/lite/widget/script?id=714531"></script>
     </div>
   );
 }
